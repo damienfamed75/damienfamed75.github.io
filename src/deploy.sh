@@ -8,8 +8,8 @@ printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 # Build the project.
 hugo -t kross-hugo-portfolio-template
 
-# Go To Docs/ folder
-cd docs
+# Go To root
+cd ../
 
 # Add changes to git.
 git add .
