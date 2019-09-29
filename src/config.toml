@@ -58,7 +58,7 @@ home = "Home"
 description = "Home"
 author = "Themefisher"
 # Google Analitycs
-googleAnalitycsID = "Your ID"
+googleAnalitycsID = "UA-148965504-1"
 
   # Preloader
   [params.preloader]
