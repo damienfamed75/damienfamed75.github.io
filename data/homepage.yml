@@ -1,0 +1,111 @@
+# banner
+banner:
+  title : "Hi! I'm <br> Damien Stamates <br> Software Developer"
+  socialLinks:
+    - icon : "ti-github"
+      URL : "https://github.com/damienfamed75"
+      
+    - icon : "ti-linkedin"
+      URL : "https://www.linkedin.com/in/damien-stamates-a3068212a/"
+      
+    - icon : "ti-twitter"
+      URL: "https://twitter.com/Damienfamed75"  
+
+# about
+about:
+  enable : true
+  content : "From Hartford, Wisconsin and employed out of high school by Northwestern Mutual as a Software Developer.
+    I've worked there since May 2017 and have been growing my skill of software development and database/general solution designs."
+  button:
+    btnText : "know more"
+    URL : "/about"
+
+# skill
+skill:
+  enable : true
+  skillbar:
+    - title : "Golang"
+      progress : "95%"
+      color : "#fdb157"
+      
+    - title : "C/C++"
+      progress : "60%"
+      color : "#9473e6"
+      
+    - title : "Photoshop"
+      progress : "90%"
+      color : "#bdecf6"
+      
+    - title : "Illustrator"
+      progress : "70%"
+      color : "#ffbcaa"
+
+# experience
+experience:
+  enable : true
+  item: 
+      
+    - logo : "images/experience/icon-1.png"
+      title : "Software Developer"
+      company : "NORTHWESTERN MUTUAL"
+      duration : "May 2017 - Present"
+
+# education
+education:
+  enable : false
+  item:
+    # - title : "Software Development"
+    #   year : "20XX"
+    #   academy : "Wisconsin Blah blah blah"
+
+# service
+service:
+  enable : true
+  item : 
+    - title : "UI/Logo Design"
+      icon : "ti-palette"
+      content : "As stated above, my main focus for most of my life was illustration and animation. Therefore Logo/UI design is another love of mine."
+      highlighted : false
+
+    - title : "Software Development"
+      icon : "ti-desktop"
+      content : "Software Development is my main specialty with multiple open source projects available to see. Following best practices for modularity and ease of maintenance."
+      highlighted : true
+
+    - title : "Software Solution Design"
+      icon : "ti-vector"
+      content : "Design database schemas for maximum efficiency and design of a multi-service solution for business needs."
+      highlighted : false
+
+# portfolio
+portfolio:
+  enable : true
+  item:
+    - image : "images/portfolio/item-1.png"
+      projectURL : "https://github.com/northwesternmutual/grammes"
+      
+    - image : "images/portfolio/item-2.png"
+      projectURL : "https://github.com/damienfamed75/quirk"
+      
+    - image : "images/portfolio/item-3.png"
+      projectURL : "https://github.com/damienfamed75/aseprite"
+
+# testimonial
+testimonial:
+  enable : false
+  item:
+    # - name : "Jesica Gomez"
+    #   image : "images/testimonial/client-1.png"
+    #   designation : "CEO, Funder"
+    #   content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+
+# client slider
+clientSlider:
+  enable : false
+  item:
+    - logo : "images/clients-logo/client-logo-1.png"
+      URL : "#"
+
+# blog
+blog:
+  enable : false

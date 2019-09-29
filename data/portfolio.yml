@@ -1,0 +1,30 @@
+# portfolio filter list
+list:
+  - title : "UI/LOGO DESIGN"
+    type : "design"
+    
+  - title : "SOFTWARE DEVELOPMENT"
+    type : "development"
+    
+  - title : SOFTWARE SOLUTION DESIGN"
+    type : "solution"
+
+# portfolio item
+item:
+  - image : "images/portfolio/item-1.png"
+    projectURL : "https://github.com/northwesternmutual/grammes"
+    projectType:
+      - type: "design"
+      - type: "solution"
+      - type: "development"
+      
+  - image : "images/portfolio/item-2.png"
+    projectURL : "https://github.com/damienfamed75/quirk"
+    projectType:
+      - type: "design"
+      - type: "development"
+      
+  - image : "images/portfolio/item-3.png"
+    projectURL : "https://github.com/damienfamed75/aseprite"
+    projectType:
+      - type: "development"

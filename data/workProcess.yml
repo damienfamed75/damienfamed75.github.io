@@ -1,0 +1,12 @@
+step:
+  - title : "Research and Plan"
+    icon : "images/icons/plan.png"
+    content : "New technologies and environments are fun to learn. This step is the most important for understanding of what is wanted out of a product."
+    
+  - title : "Design and Develop"
+    icon : "images/icons/design.png"
+    content : "Design and development are my personal favorite steps. Development using Agile/Scrum. For independent projects I use simple Kanban though."
+    
+  - title : "Deliver"
+    icon : "images/icons/print.png"
+    content : "Continuous deployment and delivery is important so what is desired is achieved. With frequent sprint reviews and friendly criticism."
