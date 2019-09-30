@@ -69,6 +69,6 @@ googleAnalitycsID = "UA-148965504-1"
   formAction = "#" #contact form works with formspree.io
 
   [params.footer]
-  email = "damienstamates@gmail.com"
+  email = "damien@stamates.io"
   phone = "+1 262 353 8392"
   address = "Milwaukee, Wisconsin, USA"
