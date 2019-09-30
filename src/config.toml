@@ -1,4 +1,4 @@
-baseURL = "https://damien.stamates.info/"
+baseURL = "https://damien.stamates.io/"
 languageCode = "en-us"
 title = "Damien Stamates"
 theme = "kross-hugo-portfolio-template"
