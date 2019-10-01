@@ -1,7 +1,7 @@
 /*!------------------------------------------------------------------
 [MAIN STYLESHEET]
-PROJECT: Project Name
-VERSION: Versoin Number
+PROJECT: Damien Stamates
+VERSION: v0.1.0
 -------------------------------------------------------------------*/
 @import "https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500,700";
 
@@ -82,7 +82,7 @@ h5,
 
 h6,
 .h6 {
-  font-size: 14px
+  font-size: 16px
 }
 
 .btn {
@@ -690,9 +690,8 @@ textarea.form-control {
   bottom: -50px
 }
 
-/* padding-top: 200px */
 .footer-section {
-  padding-top: 50px
+  padding-top: 200px
 }
 
 .section-on-footer {

@@ -65,8 +65,8 @@ googleAnalitycsID = "UA-148965504-1"
   enable = true
 
   [params.contact]
-  enable = false
-  formAction = "#" #contact form works with formspree.io
+  enable = true
+  formAction = "https://formspree.io/damien@stamates.io" #contact form works with formspree.io
 
   [params.footer]
   email = "damien@stamates.io"
