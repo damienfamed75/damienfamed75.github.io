@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Damien Stamates</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Grammes. A Golang package built to communicate with Apache TinkerPop graph computing framework using Gremlin.">
+  <meta name="author" content="Damien Stamates">
+  <meta name="generator" content="Hugo 0.58.3" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://damien.stamates.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://damien.stamates.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://damien.stamates.io/plugins/themify-icons/themify-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://damien.stamates.io/css/style.min.css" integrity="" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://damien.stamates.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://damien.stamates.io/images/favicon.png " type="image/x-icon">
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+</div>
+<!-- preloader end -->
+<header class="navigation fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="https://damien.stamates.io/"><img src="https://damien.stamates.io/images/logo.png" alt="Damien Stamates"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="https://damien.stamates.io/"> Home </a>
+        </li>
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" href="https://damien.stamates.io/about">About</a>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" href="https://damien.stamates.io/blog">Blog</a>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" href="https://damien.stamates.io/portfolio">Portfolio</a>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" href="https://damien.stamates.io/contact">Contact</a>
+        </li>
+        
+        
+      </ul>
+    </div>
+  </nav>
+</header>
+
+  
+<section class="page-title bg-primary position-relative overflow-hidden">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="text-white font-tertiary">Introducing Grammes</h1>
+      </div>
+    </div>
+  </div>
+  
+  <img src="/images/illustrations/page-title.svg" alt="illustrations" class="bg-shape-1 w-100">
+  <img src="/images/illustrations/leaf-pink-round.svg" alt="illustrations" class="bg-shape-2">
+  <img src="/images/illustrations/dots-cyan.svg" alt="illustrations" class="bg-shape-3">
+  <img src="/images/illustrations/leaf-orange.svg" alt="illustrations" class="bg-shape-4">
+  <img src="/images/illustrations/leaf-yellow.svg" alt="illustrations" class="bg-shape-5">
+  <img src="/images/illustrations/dots-group-cyan.svg" alt="illustrations" class="bg-shape-6">
+  <img src="/images/illustrations/leaf-cyan-lg.svg" alt="illustrations" class="bg-shape-7">
+</section>
+
+
+
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3 class="font-tertiary mb-5">Introducing Grammes</h3>
+          <p class="font-secondary">Published on Sep 30, 2019 by <span class="text-primary">Damien Stamates</span></p>
+          <div class="content">
+            <img src="https://damien.stamates.io/images/blog/grammes-desk.png" alt="post-thumb" class="img-fluid rounded float-left mr-5 mb-4">
+            
+
+<p>Grammes is a Go (Golang) package built to communicate with Apache TinkerPop™ Graph computing framework using Gremlin.</p>
+
+<p>Gremlin is a graph traversal language used by graph databases such as JanusGraph®, Microsoft Azure Cosmos DB, Amazon Neptune, and DataStax® Enterprise Graph.</p>
+
+<p>Something to be noted is that the compatibility for Microsoft Azure Cosmos DB, Amazon Neptune, and Datastax® Enterprise Graph are not yet finished.</p>
+
+<h4 id="why-did-we-make-grammes">Why Did We Make Grammes</h4>
+
+<h5 id="implementing-graph-databases-in-go">Implementing Graph Databases in Go</h5>
+
+<p>Implementing a graph database into a Go workflow is difficult when there aren’t any full-fledged packages or libraries to interact with Gremlin completely from inside Go.</p>
+
+<h5 id="a-direct-method-to-interact-with-gremlin-in-go">A Direct Method to Interact with Gremlin in Go</h5>
+
+<p>There were no ways to traverse (query) the server without feeding in some strings with Groovy in them. Then in return, you’d receive raw and non-formatted data.</p>
+
+<hr />
+
+<h4 id="creating-grammes">Creating Grammes</h4>
+
+<h5 id="a-simple-and-easy-client">A Simple and Easy Client</h5>
+
+<p>While designing Grammes the choice was obvious to make a new client interact with the Gremlin server. This client handles all the connection, authentication, and graph database traversing (querying) for the user, but if you don’t want to use a client we’ve added a package to traverse (query) the database without the client. After finalizing all the design decisions, what we achieved was a simple and easy client with custom configurations. This is achievable by passing in client configuration functions as arguments.</p>
+
+<h5 id="choosing-a-graph-database-for-testing">Choosing a Graph Database for Testing</h5>
+
+<p>For testing and development, we used JanusGraph®. Grammes is compatible with Amazon Neptune, Cosmos DB, DataStax® Enterprise Graph, and more as long as you set up the structs. (it is planned to implement these into the package itself.)</p>
+
+<hr />
+
+<h4 id="what-we-did">What We Did</h4>
+
+<h5 id="building-blocks-for-the-traversal-queries">Building Blocks for the Traversal (Queries)</h5>
+
+<p>Using Grammes’ traversal (query) building blocks, there are endless possibilities when building commands for the Gremlin server, without having to touch the console once. This is possible because the traversal and its associated functions mirror the Gremlin counterparts (java).</p>
+
+<h5 id="custom-types-from-gremlin-to-grammes">Custom Types from Gremlin to Grammes</h5>
+
+<p>Grammes has packages for most types in Gremlin so you can use them in the same way you would in the Gremlin console. These include types such as Multiplicity, Tokens, Search Predicates, and Scopes.</p>
+
+<h5 id="structures-for-vertices-edges-and-properties">Structures for Vertices, Edges, and Properties</h5>
+
+<p>For these types, we have structures and methods related to them. Grammes handles all the traversal (query) construction for altering the vertices if you so wish to use these structures. Now you can interact with the vertices on the graph in memory without manually traversing (querying) the database every time.</p>
+
+<hr />
+
+<h4 id="the-finished-product">The Finished Product</h4>
+
+<h5 id="features-of-grammes">Features of Grammes</h5>
+
+<ul>
+<li><p><em>Grammes handles all authentication and secure connections,</em></p>
+
+<ul>
+<li>allowing you to use usernames, passwords, and challenge IDs all within the client itself to establish a connection to your Gremlin server.</li>
+</ul></li>
+
+<li><p><em>Traversing (querying) a Gremlin server</em></p>
+
+<ul>
+<li>is the most important feature of Grammes. Many functions belonging to the Client use this feature when adding vertices, getting outer edges from a vertex, and more.</li>
+</ul></li>
+
+<li><p><em>Storing vertices and edges in structures</em></p>
+
+<ul>
+<li>accomplishes one of the main goals of the Grammes package. To interact with your graph without having to traverse <em>(query)</em> it every single time by hand; allowing you to interact with your vertex and its edges with only a <code>struct</code> of it.</li>
+</ul></li>
+
+<li><p><em>Traversal (Query) building blocks,</em></p>
+
+<ul>
+<li>grants you the ability to build custom traversals <em>(queries)</em> directed toward the Gremlin server with <em>auto-complete</em>. From the Gremlin server, your command gets carried over to the graph database of your choice.</li>
+</ul></li>
+
+<li><p><em>Custom types to match Gremlin.</em></p>
+
+<ul>
+<li>In the Grammes package, we’ve created custom types to match those in Gremlin. This is so you can use those types exactly how you would in the Gremlin console to allow for many opportunities.</li>
+</ul></li>
+
+<li><p><em>Functions to use Gremlin without making traversals (queries)</em></p>
+
+<ul>
+<li>help new users who don’t know the Gremlin language still interact with the database.
+A “quick” package; interacts with a graph without a client.
+Having an API for Gremlin interact with a graph database is one thing, but having an API that allows you to do it quickly is another. This package does all the above in an easy and concise way of allowing newcomers to learn without having to know Gremlin at all.</li>
+</ul></li>
+
+<li><p><em>Plenty of documentation and examples available.</em></p>
+
+<ul>
+<li>In the Grammes repository, there are various examples of how to use the various functions available. There is also plenty of documentation and diagrams to show how everything works in Grammes internally.</li>
+</ul></li>
+</ul>
+
+<hr />
+
+<p><img src="/images/blog/grammes-teaching.png" alt="Grammes Gopher Teaching" /></p>
+
+<h4 id="getting-started">Getting Started</h4>
+
+<h5 id="prerequisites">Prerequisites</h5>
+
+<p>You need to set up all of the following tools to use Grammes</p>
+
+<ul>
+<li><a href="https://golang.org/dl/">Go 1.11.1+</a></li>
+<li><a href="https://www.java.com/en/download/">Java 1.8</a></li>
+<li><a href="https://github.com/JanusGraph/janusgraph/releases">JanusGraph®</a></li>
+</ul>
+
+<h5 id="cloning-grammes">Cloning Grammes</h5>
+
+<p>Open up a terminal for yourself and begin by cloning the Grammes repository.</p>
+
+<pre><code class="language-sh">go get -u github.com/northwesternmutual/grammes
+</code></pre>
+
+<h5 id="setting-up-janusgraph">Setting up JanusGraph®</h5>
+
+<p>First off, direct yourself to the Grammes repository.</p>
+
+<pre><code class="language-sh">cd $GOPATH/src/github.com/northwesternmutual/grammes
+</code></pre>
+
+<p>Next, you want to change directory to the <code>scripts/</code> folder in the root of the project.</p>
+
+<pre><code class="language-sh">cd scripts/
+</code></pre>
+
+<p>Now run the <code>./janusgraph.sh</code> script to begin downloading and turning on the graph database. If you meet any issues please find your way to the bottom of the article.</p>
+
+<pre><code class="language-sh">./janusgraph.sh
+</code></pre>
+
+<p>While you&rsquo;re still here let&rsquo;s make sure the installation of JanusGraph® was successful by running the <code>gremlin.sh</code> script located in the same directory.</p>
+
+<pre><code class="language-sh">./gremlin.sh
+</code></pre>
+
+<p>If Gremlin ran successfully then run these commands and make sure it matches below.</p>
+
+<pre><code class="language-sh">gremlin&gt; :remote connect tinkerpop.server conf/remote.yaml
+===&gt;Configured localhost/127.0.0.1:8182
+gremlin&gt; :exit
+</code></pre>
+
+<p>Finally, if the script ran successfully with no errors then you may check if the graph and server are running by checking the status.</p>
+
+<pre><code class="language-sh">./janusgraph status
+</code></pre>
+
+<h5 id="using-grammes">Using Grammes</h5>
+
+<p><em>Once you have your graph database working then it&rsquo;s time to begin using Grammes in your project.</em></p>
+
+<p>Begin by creating a place for your code, i.e.,</p>
+
+<pre><code class="language-sh">$GOPATH/src/github.com/&lt;username here&gt;/&lt;project nbame here&gt;
+</code></pre>
+
+<p>Next, you want to create a <code>main.go</code> file in the project directory you created. For this example, my editor of choice is MS Visual Studio Code and I will be using it to initialize this file. You may use other commands or editors.</p>
+
+<pre><code class="language-sh">code main.go
+</code></pre>
+
+<p>In this you can begin by making it a typical empty <code>main.go</code> file like this:</p>
+
+<script src="https://gist.github.com/damienstamates/e0c9c6e944c25e8be7ea15627e89e817.js"></script>
+
+<p>Now let&rsquo;s import the Grammes project and begin using it by creating a client that will connect to a local server.</p>
+
+<script src="https://gist.github.com/damienstamates/823aede42638b07067a610d90f5ef781.js"></script>
+
+<p>Once you have all this written try running it on your machine! Just direct yourself to your file in your terminal and run this command.</p>
+
+<pre><code class="language-sh">go run main.go
+</code></pre>
+
+<p>After the client gets instantiated then you may begin traversing <em>(querying)</em> the Gremlin server via the <code>.ExecuteQuery()</code> and the <code>.ExecuteBoundQuery()</code> method in the client. To use this function you must put in a <code>Query</code> which is an interface for any kind of Query-able type in the package. These include: <code>graph.String</code> and <code>traversal.String</code>. To get one of these objects you must use one of these functions in the main package: <code>Traversal</code>, <code>GraphTraversal</code>, and <code>CustomTraversal</code>. For an example of traversing <em>(querying)</em> the Gremlin server for all the vertex labels:</p>
+
+<script src="https://gist.github.com/damienstamates/4f5c53b2868f15dd56d9f56fab67547a.js"></script>
+
+<p>Last but not least, Grammes, allows for the ability to interact directly to the graph using outputted Vertex structures. When using one of the functions for adding or getting vertices from the graph these return Vertex structures. With these structures, we are allowed to alter the properties and get other vertices from the outgoing edges without querying the server directly.</p>
+
+<p>For more examples look in the <code>examples/</code> directory in the root of the Grammes repository. In there you’ll find <em>multiple examples</em> on how to use the API in-depth.</p>
+
+<hr />
+
+<p><img src="/images/blog/grammes-gopher-gremlin-hug.png" alt="Grammes Gopher and Gremlin Hugging" /></p>
+
+<h4 id="additional-resources">Additional Resources</h4>
+
+<h5 id="documentation-on-gremlin">Documentation on Gremlin</h5>
+
+<p>To learn more about how to use Gremlin I highly recommend looking through their <a href="http://tinkerpop.apache.org/docs/current/reference/">TinkerPop3 Documentation</a>.
+It’s full of examples and descriptions on every traversal step available and more.</p>
+
+<h5 id="documentation-on-janusgraph">Documentation on JanusGraph®</h5>
+
+<p>JanusGraph® is one of the main contenders of graph databases that Grammes was built on using.
+They have plenty of resources on their website on how to use JanusGraph® and Gremlin <a href="https://docs.janusgraph.org/latest/">here</a>.</p>
+
+<h5 id="examples">Examples</h5>
+
+<p>To find examples look in the <code>examples/</code> directory in Grammes.
+This directory is located in the root of the repository.
+In there you’ll find plenty of examples related to this package in-depth.
+<em>Make sure you’re running JanusGraph® before you begin running any of the examples.</em></p>
+
+<hr />
+
+<h4 id="troubleshooting">Troubleshooting</h4>
+
+<h5 id="fixing-timeouts-when-starting-janusgraph">Fixing timeouts when starting JanusGraph®</h5>
+
+<p>If <a href="http://cassandra.apache.org/download/">Nodetool</a> times out or any other part of the setup times out then the most common issue is that Cassandra® is already running on your machine. To fix this please run this command.</p>
+
+<pre><code class="language-sh"># only on Unix at the moment.
+launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.cassandra.plist
+</code></pre>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+<footer class="bg-dark footer-section">
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5 class="text-light">Email</h5>
+          <p class="text-white paragraph-lg font-secondary">damien@stamates.io</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">Phone</h5>
+          <p class="text-white paragraph-lg font-secondary">&#43;1 414 367 9248</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">Address</h5>
+          <p class="text-white paragraph-lg font-secondary">Milwaukee, Wisconsin, USA</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border-top text-center border-dark py-5">
+    <p class="mb-0 text-light">Powered by <a href="https://themefisher.com/best-hugo-themes">Hugo Themes</a></p>
+  </div>
+</footer>
+
+
+<!-- Google Map API -->
+<script src="https://damien.stamates.io/"></script>
+<!-- JS Plugins -->
+
+<script src="https://damien.stamates.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://damien.stamates.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://damien.stamates.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://damien.stamates.io/plugins/shuffle/shuffle.min.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://damien.stamates.io/js/script.min.js"></script>
+<!-- google analitycs -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-148965504-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>
