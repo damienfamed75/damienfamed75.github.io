@@ -691,11 +691,12 @@ textarea.form-control {
 }
 
 .footer-section {
-  padding-top: 350px
+  padding-top: 200px
 }
 
 .section-on-footer {
-  margin-bottom: -250px
+  /* margin-bottom: -250px */
+  margin-bottom: -350px
 }
 
 .shadow-down {
