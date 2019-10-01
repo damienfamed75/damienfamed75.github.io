@@ -15,7 +15,8 @@ banner:
 about:
   enable : true
   content : "From Hartford, Wisconsin and employed out of high school by Northwestern Mutual as a Software Developer.
-    I've worked there since May 2017 and have been growing my skill of software development and database/general solution designs."
+    I've worked there since May 2017 and have been growing my skill of software development and database/general solution designs.
+    Other than software development I've dabbled in cartooning, animation, and other design work."
   button:
     btnText : "know more"
     URL : "/about"
