@@ -35,10 +35,10 @@ publishDir = "../"
   URL = "about"
   weight = 2
   
-#   [[menu.main]]
-#   name = "Blog"
-#   URL = "blog"
-#   weight = 3
+  [[menu.main]]
+  name = "Blog"
+  URL = "blog"
+  weight = 3
   
   [[menu.main]]
   name = "Portfolio"
@@ -56,7 +56,7 @@ logo = "images/logo.png"
 home = "Home"
 # Meta data
 description = "Home"
-author = "Themefisher"
+author = "Damien Stamates"
 # Google Analitycs
 googleAnalitycsID = "UA-148965504-1"
 
