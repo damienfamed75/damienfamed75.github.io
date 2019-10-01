@@ -108,4 +108,4 @@ clientSlider:
 
 # blog
 blog:
-  enable : true
+  enable : false

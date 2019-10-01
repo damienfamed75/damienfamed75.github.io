@@ -3,6 +3,7 @@ title: "About"
 date: 2019-09-29T11:09:13-05:00
 description: "Information about Damien Stamates."
 author : "Damien Stamates"
+image: "images/help.svg"
 authorImage : "images/about/author.jpg"
 authorSignature : "images/about/signature.png"
 ---
