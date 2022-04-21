@@ -1,43 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://damien.stamates.io/</loc>
     <lastmod>2019-09-30T19:21:24-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://damien.stamates.io/blog/introducing-grammes/</loc>
     <lastmod>2019-09-30T19:21:24-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://damien.stamates.io/about/</loc>
     <lastmod>2019-09-29T11:09:13-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://damien.stamates.io/blog/</loc>
     <lastmod>2019-05-12T12:14:34+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://damien.stamates.io/contact/</loc>
     <lastmod>2019-05-12T12:14:34+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://damien.stamates.io/portfolio/</loc>
     <lastmod>2019-05-12T12:14:34+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://damien.stamates.io/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://damien.stamates.io/tags/</loc>
   </url>
-  
 </urlset>

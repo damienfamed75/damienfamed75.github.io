@@ -97,8 +97,8 @@ testimonial:
   item:
     - name : "Bahram Samani"
       image : "images/testimonial/client-1.png"
-      designation : "Sr Director"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      designation : "Sr Solutions Architect"
+      content : "Damien is a very unique individual. His skills, and passion for engineering is one of kind. No matter what was asked, Damien was able to learn the concept, apply it and deliver. It was pleasure working with him and he would be a great engineer in any organization. Plus, he is nice person and a talented artist. I am looking forward to working with him again."
 
 # client slider
 clientSlider:
